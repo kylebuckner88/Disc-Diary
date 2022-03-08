@@ -1,0 +1,56 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "name": "Jacob Walker",
+            "email": "jwalker@gmail.com"
+        },
+        {
+            "id": 2, 
+            "name": "Emily Young",
+            "email": "emilyyoung@gmail.com"
+        }
+    ],
+    "records": [
+        {
+            "id": 1,
+            "userId": 1,
+            "name": "What's Goin' On?",
+            "artist": "Marvin Gaye",
+            "genre": "R&B",
+            "shopId": 1
+        },
+        {
+            "id": 2,
+            "userId": 1,
+            "name": "Exile on Main St",
+            "artist": "Rolling Stones",
+            "genre": "Rock",
+            "shopId": 1
+        },
+        {
+            "id": 3,
+            "userId": 1,
+            "name": "Pet Sounds",
+            "artist": "Beach Boys",
+            "genre": "Rock",
+            "shopId": 1
+        }
+    ],
+    "shops": [
+        {
+            "id": 1,
+            "userId": 1,
+            "name": "Harvest Records",
+            "city": "Asheville, NC",
+            "dateVisited": ""
+        },
+        {
+            "id": 2,
+            "userId": 1,
+            "name": "Technique Records",
+            "city": "Miami, FL",
+            "dateVisited": ""
+        }
+    ]
+}
