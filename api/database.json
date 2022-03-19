@@ -1,56 +1,187 @@
 {
-    "users": [
-        {
-            "id": 1,
-            "name": "Jacob Walker",
-            "email": "jwalker@gmail.com"
-        },
-        {
-            "id": 2, 
-            "name": "Emily Young",
-            "email": "emilyyoung@gmail.com"
-        }
-    ],
-    "records": [
-        {
-            "id": 1,
-            "userId": 1,
-            "name": "What's Goin' On?",
-            "artist": "Marvin Gaye",
-            "genre": "R&B",
-            "shopId": 1
-        },
-        {
-            "id": 2,
-            "userId": 1,
-            "name": "Exile on Main St",
-            "artist": "Rolling Stones",
-            "genre": "Rock",
-            "shopId": 1
-        },
-        {
-            "id": 3,
-            "userId": 1,
-            "name": "Pet Sounds",
-            "artist": "Beach Boys",
-            "genre": "Rock",
-            "shopId": 1
-        }
-    ],
-    "shops": [
-        {
-            "id": 1,
-            "userId": 1,
-            "name": "Harvest Records",
-            "city": "Asheville, NC",
-            "dateVisited": ""
-        },
-        {
-            "id": 2,
-            "userId": 1,
-            "name": "Technique Records",
-            "city": "Miami, FL",
-            "dateVisited": ""
-        }
-    ]
+  "users": [
+    {
+      "id": 1,
+      "name": "Jacob Walker",
+      "email": "jwalker@gmail.com"
+    },
+    {
+      "id": 2,
+      "name": "Emily Young",
+      "email": "emilyyoung@gmail.com"
+    }
+  ],
+  "records": [
+    {
+      "id": 1,
+      "userId": 1,
+      "title": "What's Goin' On?",
+      "artist": "Marvin Gaye",
+      "genre": "R&B",
+      "shopId": 1,
+      "date": "2/6/15",
+      "HaveRecord": true,
+      "WantRecord": false,
+      "notes": "Got this on my birthday trip to San Francisco! "
+    },
+    {
+      "id": 2,
+      "userId": 1,
+      "title": "Exile on Main St",
+      "artist": "Rolling Stones",
+      "genre": "Rock",
+      "shopId": 3,
+      "HaveRecord": true,
+      "WantRecord": false,
+      "date": "4/20/15",
+      "notes": "Heard this on the radio and found it later that day!"
+    },
+    {
+      "id": 3,
+      "userId": 1,
+      "title": "Pet Sounds",
+      "artist": "Beach Boys",
+      "genre": "Rock",
+      "shopId": 2,
+      "HaveRecord": true,
+      "WantRecord": false,
+      "date": "1/11/15",
+      "notes": "Learned about this record from the Brian Wilson documentary."
+    },
+    {
+      "id": 4,
+      "userId": 1,
+      "title": "Midnight Marauders",
+      "artist": "A Tribe Called Quest",
+      "genre": "Hip Hop",
+      "shopId": 1,
+      "HaveRecord": true,
+      "WantRecord": false,
+      "date": "1/20/16",
+      "notes": ""
+    },
+    {
+      "id": 5,
+      "userId": 1,
+      "title": "RAM",
+      "artist": "Paul McCartney",
+      "genre": "Rock",
+      "shopId": 4,
+      "HaveRecord": true,
+      "WantRecord": false,
+      "date": "3/22/16",
+      "notes": ""
+    },
+    {
+      "id": 7,
+      "userId": 1,
+      "title": "Ramones",
+      "artist": "Ramones",
+      "genre": "Rock",
+      "shopId": 2,
+      "HaveRecord": true,
+      "WantRecord": false,
+      "date": "6/1/17",
+      "notes": ""
+    },
+    {
+      "id": 8,
+      "userId": 1,
+      "title": "Tusk",
+      "artist": "Fleetwood Mac",
+      "genre": "Rock",
+      "shopId": 1,
+      "HaveRecord": true,
+      "WantRecord": false,
+      "date": "6/22/18",
+      "notes": ""
+    },
+    {
+      "id": 10,
+      "userId": 1,
+      "title": "License to Ill",
+      "artist": "Beastie Boys",
+      "genre": "Hip Hop",
+      "shopId": 4,
+      "HaveRecord": true,
+      "WantRecord": false,
+      "date": "7/9/19",
+      "notes": ""
+    },
+    {
+      "id": 11,
+      "userId": 1,
+      "title": "Sea Changes",
+      "artist": "Beck",
+      "genre": "Rock",
+      "shopId": 1,
+      "HaveRecord": true,
+      "WantRecord": false,
+      "date": "",
+      "notes": ""
+    },
+    {
+      "id": 12,
+      "userId": 1,
+      "title": "Songs From the Big Chair",
+      "artist": "Tears for Fears",
+      "genre": "Rock",
+      "shopId": 2,
+      "HaveRecord": true,
+      "WantRecord": false,
+      "date": "1/02/20",
+      "notes:": ""
+    },
+    {
+      "userId": 1,
+      "title": "",
+      "artist": "",
+      "genre": "",
+      "shopId": 0,
+      "HaveRecord": false,
+      "WantRecord": true,
+      "date": "",
+      "img": "",
+      "dateTime": "3/19/2022, 1:52:42 PM",
+      "id": 13
+    }
+  ],
+  "shops": [
+    {
+      "id": 1,
+      "name": "Harvest Records",
+      "city": "Asheville, NC",
+      "notes": ""
+    },
+    {
+      "id": 2,
+      "name": "Technique Records",
+      "city": "Miami, FL",
+      "notes": ""
+    },
+    {
+      "id": 3,
+      "name": "Amoeba Records",
+      "city": "San Francisco, CA",
+      "notes": ""
+    },
+    {
+      "id": 4,
+      "userId": 1,
+      "name": "Recycled Sounds",
+      "city": "Omaha, NE",
+      "img": "",
+      "title": "a",
+      "dateTime": "3/14/2022, 6:35:51 PM",
+      "notes": ""
+    },
+    {
+      "id": 5,
+      "userId": 1,
+      "name": "Revolution Records",
+      "city": "Kansas City, MO",
+      "img": "",
+      "notes": "Great psychedelic rock section!"
+    }
+  ]
 }

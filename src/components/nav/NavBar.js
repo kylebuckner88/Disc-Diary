@@ -16,26 +16,31 @@ export const NavBar = (props) => {
         <li className="nav-item">
           <Link className="nav-link" to="/">Home</Link>
         </li>
+
+        <li className="nav-item">
+          <Link className="nav-link" to="/records/addRecord">Add a Record</Link>
+        </li>
         
         <li className="nav-item">
           <Link className="nav-link" to="/records">My Collection</Link>
         </li>
 
         <li className="nav-item">
-          <Link className="nav-link" to="/addRecord">Add a Record</Link>
+          <Link className="nav-link" to="/records/IWant">Records I Want</Link>
         </li>
 
         <li className="nav-item">
-          <Link className="nav-link" to="/haveVisited">Shops I've Visited</Link>
+          <Link className="nav-link" to="/shops/addShop">Add a Shop</Link>
         </li>
 
         <li className="nav-item">
-          <Link className="nav-link" to="/toVisit">Shops to Visit</Link>
+          <Link className="nav-link" to="/shops">Shops I've Visited</Link>
         </li>
 
         <li className="nav-item">
-          <Link className="nav-link" to="/recordsIWant">Records I Want</Link>
+          <Link className="nav-link" to="/shops/ToVisit">Shops to Visit</Link>
         </li>
+
       </ul>
     </nav>
   )
