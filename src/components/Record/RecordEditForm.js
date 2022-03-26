@@ -27,7 +27,7 @@ export const RecordEditForm = () => {
     };
 
   updateRecord(editedRecord)
-    .then(() => navigate("/records")
+    .then(() => navigate("/records/HaveRecord")
     )
   }
 

@@ -3,10 +3,12 @@ import { Route, Routes, Navigate } from "react-router-dom"
 import { Home } from "./Home.js"
 import { Login } from './auth/Login'
 import { RecordForm } from "./Record/RecordForm.js"
-import { RecordList } from "./Record/RecordList.js"
+import { RecordsIHaveList } from "./Record/RecordsIHaveList.js"
+import { RecordsIWantList } from "./Record/RecordsIWantList.js"
 import { ShopList } from "./Shop/ShopList.js"
 import { RecordEditForm } from "./Record/RecordEditForm.js"
 import { ShopForm } from "./Shop/ShopForm.js"
+import { RecordIFoundForm } from "./Record/RecordIFoundForm.js"
 
 export const ApplicationViews = ({ isAuthenticated, setIsAuthenticated }) => {
     const PrivateRoute = ({ children }) => {
@@ -29,7 +31,11 @@ return (
 
             <Route exact path="/records/addRecord" element={<PrivateRoute><RecordForm /></PrivateRoute>} />
 
-            <Route exact path="/records" element={<PrivateRoute><RecordList /></PrivateRoute>} />
+            <Route exact path="/records/addRecordIgot" element={<PrivateRoute><RecordIFoundForm /></PrivateRoute>} />
+
+            <Route exact path="/records/HaveRecord" element={<PrivateRoute><RecordsIHaveList /></PrivateRoute>} />
+
+            <Route exact path="/records/WantRecord" element={<PrivateRoute><RecordsIWantList /></PrivateRoute>} />
 
             <Route path="/records/:recordId/edit" element={<PrivateRoute><RecordEditForm /></PrivateRoute>} />
 

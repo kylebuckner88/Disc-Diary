@@ -1,8 +1,8 @@
 import React from "react"
 import { Link } from "react-router-dom";
-// import "./Record.css"
+import "./Record.css"
 
-export const RecordCard = ({ record, handleDeleteRecord }) => {
+export const RecordIHaveCard = ({ record, handleDeleteRecord }) => {
   return (
     <div className="card">
       <div className="card-content">
@@ -13,7 +13,7 @@ export const RecordCard = ({ record, handleDeleteRecord }) => {
         <p>Genre: {record.genre}</p>
         <p>Purchased at {record.shop?.name} in {record.shop?.city} on {record.date}</p>
         <p>Notes: {record.notes}</p>
-        <button type="button" onClick={() => handleDeleteRecord(record.id)}>Remove From Collection</button>
+        <button type="button" onClick={() => handleDeleteRecord(record.id)}>Remove From Collection</button> 
         <Link to={`/records/${record.id}/edit`}>
             <button>Edit</button>
         </Link>

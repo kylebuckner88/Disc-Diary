@@ -1,0 +1,28 @@
+
+.card-content h1 {
+    text-align: left;
+    padding: 1rem;
+    padding-bottom: .5rem;
+    margin-left: 0rem;
+}
+
+.card-content h2 {
+    text-align: left;
+    padding: .5rem;
+    padding-left: 1rem;
+    margin-left: 0rem
+}
+
+.card-content p {
+    margin-left: 0rem;
+    padding-left: 1rem;
+}
+
+.card-content button {
+    justify-content: space-between;
+    justify-content: space-evenly;
+    padding-left :1rem;
+    margin-left: 1rem;
+    padding: .5rem;
+}
+

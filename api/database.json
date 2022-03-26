@@ -13,18 +13,6 @@
   ],
   "records": [
     {
-      "id": 1,
-      "userId": 1,
-      "title": "What's Goin' On?",
-      "artist": "Marvin Gaye",
-      "genre": "R&B",
-      "shopId": 1,
-      "date": "2/6/15",
-      "HaveRecord": true,
-      "WantRecord": false,
-      "notes": "Got this on my birthday trip to San Francisco! "
-    },
-    {
       "id": 2,
       "userId": 1,
       "title": "Exile on Main St",
@@ -46,7 +34,7 @@
       "HaveRecord": true,
       "WantRecord": false,
       "date": "1/11/15",
-      "notes": "Learned about this record from the Brian Wilson documentary."
+      "notes": "Learned about this record from the Brian Wilson documentary. So good!"
     },
     {
       "id": 4,
@@ -134,16 +122,56 @@
     },
     {
       "userId": 1,
-      "title": "",
-      "artist": "",
-      "genre": "",
-      "shopId": 0,
+      "title": "Requiems",
+      "artist": "John Fahey",
+      "genre": "Folk",
+      "shopId": 7,
+      "HaveRecord": true,
+      "WantRecord": false,
+      "date": "3/4/09",
+      "img": "",
+      "dateTime": "3/21/2022, 7:18:43 PM",
+      "id": 13
+    },
+    {
+      "userId": 1,
+      "title": "Kinda Kinks",
+      "artist": "The Kinks",
+      "genre": "Rock",
+      "shopId": 5,
       "HaveRecord": false,
       "WantRecord": true,
-      "date": "",
+      "date": "2/4/19",
       "img": "",
-      "dateTime": "3/19/2022, 1:52:42 PM",
-      "id": 13
+      "dateTime": "3/21/2022, 8:06:25 PM",
+      "id": 14
+    },
+    {
+      "userId": 1,
+      "title": "Donuts",
+      "artist": "J Dilla",
+      "genre": "Hip Hop",
+      "shopId": 3,
+      "HaveRecord": true,
+      "WantRecord": false,
+      "date": "4/20/21",
+      "img": "",
+      "notes": "Find info about the sampler he used on this record. So cool!!!",
+      "dateTime": "3/21/2022, 9:19:30 PM",
+      "id": 15
+    },
+    {
+      "userId": 1,
+      "title": "Currents",
+      "artist": "Tame Impala",
+      "genre": "Rock",
+      "shopId": 4,
+      "HaveRecord": true,
+      "WantRecord": false,
+      "date": "3/9/22",
+      "img": "",
+      "dateTime": "3/22/2022, 5:41:08 PM",
+      "id": 16
     }
   ],
   "shops": [
@@ -151,19 +179,19 @@
       "id": 1,
       "name": "Harvest Records",
       "city": "Asheville, NC",
-      "notes": ""
+      "notes": "Owners Matt and Mark recommended great bars in West Asheville!"
     },
     {
       "id": 2,
       "name": "Technique Records",
       "city": "Miami, FL",
-      "notes": ""
+      "notes": "Nicest staff of anywhere I've visited!"
     },
     {
       "id": 3,
       "name": "Amoeba Records",
       "city": "San Francisco, CA",
-      "notes": ""
+      "notes": "BEST PUNK ROCK SECTION EVER"
     },
     {
       "id": 4,
@@ -173,7 +201,7 @@
       "img": "",
       "title": "a",
       "dateTime": "3/14/2022, 6:35:51 PM",
-      "notes": ""
+      "notes": "Bought my Technics turntable here!"
     },
     {
       "id": 5,
@@ -182,6 +210,22 @@
       "city": "Kansas City, MO",
       "img": "",
       "notes": "Great psychedelic rock section!"
+    },
+    {
+      "id": 7,
+      "userId": 1,
+      "name": "Rough Trade",
+      "city": "New York, NY",
+      "img": "",
+      "notes": "So cool to visit such a legendary shop!"
+    },
+    {
+      "id": 10,
+      "userId": 1,
+      "name": "Grimey's New and Preloved Music",
+      "city": "Nashville, TN",
+      "img": "",
+      "notes": "My favorite record shop!"
     }
   ]
 }

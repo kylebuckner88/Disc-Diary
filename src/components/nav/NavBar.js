@@ -8,10 +8,6 @@ export const NavBar = (props) => {
     <nav className="navbar bg-dark text-white flex-md-nowrap p-0 shadow">
       
       <ul className="nav nav-pills nav-fill">
-        
-        {/* <li className="nav-item">
-          <Link className="nav-link" to="/"><img src={'/images/image2vector.svg'} alt="Employees" /></Link>
-            </li> */}
             
         <li className="nav-item">
           <Link className="nav-link" to="/">Home</Link>
@@ -22,11 +18,11 @@ export const NavBar = (props) => {
         </li>
         
         <li className="nav-item">
-          <Link className="nav-link" to="/records">My Collection</Link>
+          <Link className="nav-link" to="/records/HaveRecord">My Collection</Link>
         </li>
 
         <li className="nav-item">
-          <Link className="nav-link" to="/records/IWant">Records I Want</Link>
+          <Link className="nav-link" to="/records/WantRecord">Records I Want</Link>
         </li>
 
         <li className="nav-item">
@@ -37,9 +33,9 @@ export const NavBar = (props) => {
           <Link className="nav-link" to="/shops">Shops I've Visited</Link>
         </li>
 
-        <li className="nav-item">
+        {/* <li className="nav-item">
           <Link className="nav-link" to="/shops/ToVisit">Shops to Visit</Link>
-        </li>
+        </li> */}
 
       </ul>
     </nav>

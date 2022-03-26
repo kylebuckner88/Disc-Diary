@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { addRecord } from '../../modules/RecordManager';
+import { addNewRecord } from '../../modules/RecordManager';
 import { getAllShops } from '../../modules/ShopManager';
 
 // import './RecordForm.css'
 
-export const RecordForm = () => {
+export const RecordIFoundForm = () => {
 	
 
 	const [record, setRecord] = useState({
@@ -13,9 +13,8 @@ export const RecordForm = () => {
     title: "",
 	artist: "",
     genre: "",
-    shopId: 1,
+    shopId: 0,
     HaveRecord: false,
-    WantRecord: false,
     date: "",
     img: ""
 	});
@@ -49,29 +48,24 @@ export const RecordForm = () => {
 	const handleClickSaveRecord = (event) => {
     event.preventDefault()
 
+
     const user = JSON.parse(sessionStorage.getItem("discdiary_user"))
 
     const newRecord = { ...record }
         newRecord.userId = user.id
 		newRecord.dateTime = new Date().toLocaleString();
-        
-        
-        if (event.target.id === "HaveRecord") {
-            newRecord.HaveRecord = true
-        }
 
-        if (event.target.id === "WantRecord") {
-            newRecord.WantRecord = true
-			
-        }
-
-		addRecord(newRecord)
-		.then(() => {
-			if (newRecord.HaveRecord === true) {
-			navigate("/records/HaveRecord")
-		} else {
-			navigate("/records/WantRecord")
+		if (event.target.id ==="HaveRecord") {
+			newRecord.HaveRecord = true 
 		}
+        
+
+		addNewRecord(newRecord)
+		.then(() => {
+			if (newRecord.HaveRecord === false ) {
+			navigate("/records/HaveRecord")
+	
+			}
 		})
 
 			
@@ -82,17 +76,17 @@ export const RecordForm = () => {
 
 	return (
 		<form className="recordForm">
-			<h2 className="recordForm__title">Add a Record </h2>
+			<h2 className="recordForm__title">I Found It! </h2>
 			<fieldset>
 				<div className="form-group">
 					<label htmlFor="title">Title:</label>
-					<input type="text" id="title" onChange={handleControlledInputChange} required autoFocus className="form-control" placeholder="Enter title here" value={record.title} />
+					<input type="text" id="title" value={record.title} />
 				</div>
 			</fieldset>
             <fieldset>
 				<div className="form-group">
 					<label htmlFor="artist">Artist:</label>
-					<input type="text" id="artist" onChange={handleControlledInputChange} required autoFocus className="form-control" placeholder="Enter artist here" value={record.artist} />
+					<input type="text" id="artist" value={record.artist} />
 				</div>
 			</fieldset>
             <fieldset>
@@ -128,11 +122,7 @@ export const RecordForm = () => {
 			</fieldset>
 			<button className="btn btn-primary" id="HaveRecord"
 				onClick={handleClickSaveRecord}>
-				I Have This Record
-          </button>
-          <button className="btn btn-secondary" id="WantRecord"
-				onClick={handleClickSaveRecord}>
-				I Want This Record
+				Add to Collection
           </button>
 		</form>
 	)

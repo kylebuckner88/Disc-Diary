@@ -17,7 +17,7 @@ export const getAllRecordsIHave = () => {
 }
 
 export const getAllRecordsIWant = () => {
-    return fetch(`${remoteURL}/records?_expand=user&_expand=shop&WantRecord=true`)
+    return fetch(`${remoteURL}/records?_expand=user&_expand=shop&HaveRecord=false`)
   .then(res => res.json())
 }
 
@@ -28,6 +28,16 @@ export const deleteRecord = (id) => {
 }
 
 export const addRecord = (newRecord) => {
+  return fetch(`${remoteURL}/records`, {
+      method: "POST",
+      headers: {
+          "Content-Type": "application/json"
+      },
+      body: JSON.stringify(newRecord)
+  }).then(response => response.json())
+}
+
+export const addNewRecord = (newRecord) => {
   return fetch(`${remoteURL}/records`, {
       method: "POST",
       headers: {

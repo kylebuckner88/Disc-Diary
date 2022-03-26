@@ -1,38 +1,44 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { RecordCard } from './RecordCard';
-import { getAllRecordsIHave, getAllRecordsIWant, deleteRecord } from '../../modules/RecordManager';
+import { RecordIHaveCard } from './RecordIHaveCard';
+import { getAllRecordsIHave, deleteRecord } from '../../modules/RecordManager';
 
-export const RecordList = () => {
+export const RecordsIHaveList = () => {
   
   const [records, setRecords] = useState([]);
 
   const navigate = useNavigate();
 
-  const getRecords = () => {
+  const getRecordsIHave = () => {
    
     return getAllRecordsIHave().then(recordsFromAPI => {
       setRecords(recordsFromAPI)
     });
 
+
   };
 
   
   useEffect(() => {
-    getRecords();
+    getRecordsIHave();
   }, []);
+  
 
-  const handleDeleteRecord = id => {
-    deleteRecord(id)
-    .then(() => getAllRecordsIHave().then(setRecords));
-  };
+  
+
+
+
+  function handleDeleteRecord(id) {
+        deleteRecord(id)
+            .then(() => getAllRecordsIHave().then(setRecords));
+    }
 
  
   return(
     <>
       <div className="container-cards">
         {records.map(record =>
-          <RecordCard 
+          <RecordIHaveCard 
           key={record.id} 
           record={record}
           handleDeleteRecord={handleDeleteRecord} />

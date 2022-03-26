@@ -1,10 +1,11 @@
 import React from "react";
 
 
+
 export const Home = () => (
     <>
-        <h2>Disc Diary</h2>
-        <small>A companion on your record collecting journey!</small>
+        <h1>Disc Diary</h1>
+        <h2>A companion on your record collecting journey!</h2>
 
     
         {/* <PropsAndState yourName={""} /> */}

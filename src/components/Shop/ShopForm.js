@@ -79,13 +79,9 @@ export const ShopForm = () => {
 					<input type="textarea" id="notes" onChange={handleControlledInputChange} required autoFocus className="form-control" placeholder="Enter notes here" value={shop.notes} />
 				</div>
 			</fieldset>
-			<button className="btn btn-HaveVisited"
+			<button className="btn btn-primary"
 				onClick={handleClickSaveShop}>
-				I've Been Here!
-          </button>
-          <button className="btn btn-ToVisit"
-				onClick={handleClickSaveShop}>
-				I Want to Go Here!
+				Add Shop
           </button>
 		</form>
 	)
